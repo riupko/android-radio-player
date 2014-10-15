@@ -92,6 +92,7 @@ public class PlayActivity extends Activity {
                 intent.putExtra(MediaPlayerService.START_PLAY_STATION_ID, id);
                 startService(intent);
                 pDialog = new ProgressDialog(PlayActivity.this);
+
                 // Showing progress dialog before making http request
                 pDialog.setMessage("Loading...");
                 pDialog.show();
